@@ -1,0 +1,6 @@
+Inicio
+  Crear variable de 8 bit llamada numeroUno
+  Crear variable de 8 bit llamada numeroDos
+  Configurar los puertos c,d,e como entrada digital
+  Configurar puertos b,a como salida digital
+  
