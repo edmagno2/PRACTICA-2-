@@ -7,7 +7,6 @@
 #use fast_io(c)
 #use fast_io(d)
 #use fast_io(e)
-void resultado(int16 res);
 #define __DEBUG_SERIAL__ //Si comentas esta linea se deshabilita el debug por serial y el PIN_C6 puede ser usado en forma digital I/O
 
 #ifdef __DEBUG_SERIAL__
@@ -35,7 +34,15 @@ void main (void){
                res = numeroUno - numeroDos;
            }else{
                if(input(PIN_E2)){
-                   res = numeroUno * numeroDos;
+                   if((numeroUno*numeroDos) > 0x1fff){
+                       for(a=128;a>0;a= a/2){
+                           output_a(a);
+                           delay_ms(300);
+                       }
+
+                   }else{
+                        res = numeroUno * numeroDos;
+                   }
                }else{
                     if(input(PIN_B7)){
                         if(numeroDos == 0){
