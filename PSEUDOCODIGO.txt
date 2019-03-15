@@ -7,7 +7,8 @@ Inicio
   configurar los pin del 0 al 5 como salida digital en el puerto a
   configurar en el puerto b del pin 0 al 6 como salida digital y el pin 7 como entrada digital
   configurar en el puerto e del pin 0 al 2 como entrada digital
-  se crea ciclo infinito
+  se crea ciclo sin fin
+  mientras que true{
     numeroUno = datos que entran por el puerto c
     numeroDos = datos que entran por el puerto d
     si hay entrada de datos por pin e0
@@ -24,6 +25,8 @@ Inicio
               Mostrar un contador de anillo de 8 bits
             sino
               res=numeroUno/numeroDos
+  }
+  
      mostrar en puerto a el resultado
      mostrar en puerto b el resultado sobrante del puerto a
         
