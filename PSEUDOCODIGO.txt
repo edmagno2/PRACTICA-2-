@@ -1,6 +1,20 @@
 Inicio
-  Crear variable de 8 bit llamada numeroUno
-  Crear variable de 8 bit llamada numeroDos
-  Configurar los puertos c,d,e como entrada digital
-  Configurar puertos b,a como salida digital
+  crear variable entera contador = 0
+  variable entera de 8 bit numeroUno = 0
+  variable entera de 8 bit numeroDos = 0
+  variable entera de 32 bit res = 0
+  Configurar los puertos c,d como entrada digital 
+  configurar los pin del 0 al 5 como salida digital en el puerto a
+  configurar en el puerto b del pin 0 al 6 como salida digital y el pin 7 como entrada digital
+  configurar en el puerto e del pin 0 al 2 como entrada digital
+  se crea ciclo infinito
+    numeroUno = datos que entran por el puerto c
+    numeroDos = datos que entran por el puerto d
+    si hay entrada de datos por pin e0
+      res= numeroUno + numeroDos
+    sino
+      si hay entrada de datos por el pin e1
+        res = numeroUno - numeroDos
+      sino
+        
   
