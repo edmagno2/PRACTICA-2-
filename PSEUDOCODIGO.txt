@@ -16,5 +16,15 @@ Inicio
       si hay entrada de datos por el pin e1
         res = numeroUno - numeroDos
       sino
+        si hay entrada de datos por el pin e2
+          res= numeroUno - numeroDos;
+        sino
+          si hay entrada de datos por el pin b7
+            si numeroDos es igual a 0
+              Mostrar un contador de anillo de 8 bits
+            sino
+              res=numeroUno/numeroDos
+     mostrar en puerto a el resultado
+     mostrar en puerto b el resultado sobrante del puerto a
         
   
