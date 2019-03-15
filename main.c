@@ -17,7 +17,7 @@ void main (void){
    long numeroUno = 0;
    long numeroDos = 0;
    int16 res = 0;
-   int a;
+   int contador;
    setup_oscillator(OSC_16MHZ); //Se incialisa el ocilador de 16MHZ
    set_tris_c(0xFF);
    set_tris_d(0xFF);
@@ -35,19 +35,18 @@ void main (void){
            }else{
                if(input(PIN_E2)){
                    if((numeroUno*numeroDos) > 0x1fff){
-                       for(a=128;a>0;a= a/2){
-                           output_a(a);
+                       for(contador=128;contador>0;contador= contador/2){
+                           output_a(contador);
                            delay_ms(300);
                        }
-
                    }else{
                         res = numeroUno * numeroDos;
                    }
                }else{
                     if(input(PIN_B7)){
                         if(numeroDos == 0){
-                            for(a=128;a>0;a= a/2){
-                                output_a(a);
+                            for(contador=128;contador>0;contador= contador/2){
+                                output_a(contador);
                                 delay_ms(300);
                             }
                         }else{
