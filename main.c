@@ -31,6 +31,9 @@ void main (void){
            res = numeroUno + numeroDos;
        }else{
            if(input(PIN_E1)){
+               if(numeroDos>numeroUno){
+                   res = ((1111111111111)-(numeroUno - numeroDos))+1;
+               }
                res = numeroUno - numeroDos;
            }else{
                if(input(PIN_E2)){
@@ -58,6 +61,5 @@ void main (void){
         }
        output_a(res);
        output_b(res>>6);
-
  }
 }
