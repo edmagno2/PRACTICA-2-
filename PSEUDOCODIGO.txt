@@ -18,7 +18,7 @@ Inicio
         res = numeroUno - numeroDos
       sino
         si hay entrada de datos por el pin e2
-          res= numeroUno - numeroDos;
+          res= numeroUno * numeroDos;
         sino
           si hay entrada de datos por el pin b7
             si numeroDos es igual a 0
