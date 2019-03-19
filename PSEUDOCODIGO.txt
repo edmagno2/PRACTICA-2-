@@ -1,14 +1,14 @@
 Inicio
   crear variable entera contador = 0
-  variable entera de 8 bit numeroUno = 0
-  variable entera de 8 bit numeroDos = 0
-  variable entera de 32 bit res = 0
+  crear variable entera de 8 bit numeroUno = 0
+  crear variable entera de 8 bit numeroDos = 0
+  crear variable entera de 32 bit res = 0
   Configurar los puertos c,d como entrada digital 
   configurar los pin del 0 al 5 como salida digital en el puerto a
   configurar en el puerto b del pin 0 al 6 como salida digital y el pin 7 como entrada digital
   configurar en el puerto e del pin 0 al 2 como entrada digital
-  se crea ciclo sin fin
-  mientras que true{
+  //se crea ciclo sin fin
+  mientras que verdad{
     numeroUno = datos que entran por el puerto c
     numeroDos = datos que entran por el puerto d
     si hay entrada de datos por pin e0
@@ -25,9 +25,9 @@ Inicio
               Mostrar un contador de anillo de 8 bits
             sino
               res=numeroUno/numeroDos
-  }
+  
   
      mostrar en puerto a el resultado
      mostrar en puerto b el resultado sobrante del puerto a
-        
+    }        
   
