@@ -32,7 +32,7 @@ void main (void){
        }else{
            if(input(PIN_E1)){
                if(numeroDos>numeroUno){
-                   res = ((1111111111111)-(numeroUno - numeroDos))+1;
+                   res = ((0b1111111111111)-(numeroUno - numeroDos))+1;
                }
                res = numeroUno - numeroDos;
            }else{
